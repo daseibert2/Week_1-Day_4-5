@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main()
+{
+    char r;
+	int a,b,n;
+	char word[50];
+	n=strlen(word);
+	puts("Random Characters");
+	for(a=0;a<20;a++)
+	{
+		for(b=0;b<5;b++)
+		{
+			r=rand()*26+1;
+			printf("%d",r);
+		}
+	putchar(' ');
+	}
+
+	return 0;
+}
+
+
+
+Write a program that generates
+and prints N random-sized words
+consisting of randomly selected
+characters. The word length
+should be 1 <= length <= max.
+Print no more than 50 characters
+per line.
